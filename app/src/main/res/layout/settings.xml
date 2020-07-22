@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDDDDD">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#DDDDDD"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/lblIMEI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="Your ID"
+            android:textColor="#007499"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_imei"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblIMEI"
+            android:imeOptions="actionNext"
+            android:inputType="text|textMultiLine"
+            android:maxLength="160"
+            android:textSize="15sp">
+        </EditText>
+
+            <requestFocus />
+
+            <TextView
+                android:id="@+id/lblFCMToken"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_imei"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="FCM Token"
+                android:textColor="#007499"
+                android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_fcmtoken"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblFCMToken"
+            android:imeOptions="actionNext"
+            android:inputType="text|textMultiLine"
+            android:maxLength="500"
+            android:textSize="15sp">
+        </EditText>
+
+    </RelativeLayout>
+
+</ScrollView>

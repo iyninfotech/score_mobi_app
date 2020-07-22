@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:baselineAligned="false"
+    android:orientation="vertical"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:background="@color/lightblue"
+	>
+
+	<!--<TextView-->
+		<!--android:id="@+id/titleCompany"-->
+		<!--android:layout_width="fill_parent"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:gravity="center"-->
+		<!--android:textColor="#FFFFFF"-->
+		<!--android:layout_marginLeft="5dp"-->
+		<!--android:layout_marginRight="5dp"-->
+		<!--android:text="Company"-->
+		<!--android:textSize="18sp"-->
+		<!--android:padding="5dp"-->
+		<!--android:background="@drawable/squareboxbutton"-->
+		<!--android:textStyle="bold" />-->
+
+	<Button
+		android:id="@+id/titleCompany"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:onClick="btn_viewparameter_click"
+		android:background="@drawable/squareboxbutton"
+		android:text="Company"
+		android:textSize="18sp"
+		android:padding="5dp"
+		android:textStyle="bold"
+		android:textColor="#FFFFFF"/>
+
+	<TextView
+		android:id="@+id/titleDuration"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="#063b65"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:text="Duration"
+		android:textSize="15sp"
+
+		android:padding="5dp"
+		android:textStyle="bold|italic" />
+
+	<View android:layout_width="fill_parent"
+		android:layout_marginTop="1dp"
+		android:background="#063b65"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="2dp"
+		/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:id="@+id/resultheader"
+		android:layout_width="fill_parent"
+		android:padding="5dp"
+		android:layout_height="wrap_content"
+		android:weightSum="4"
+		>
+
+		<CheckBox
+			android:id="@+id/checkAll"
+			android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:focusable="false"
+			android:focusableInTouchMode="false"
+			android:textColorLink="@color/actionbar_control" />
+
+		<TextView
+			android:id="@+id/txtReportBy"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="5dp"
+			android:gravity="left|center_vertical"
+			android:text="Brand"
+			android:layout_weight="2"
+			android:textColor="#063b65"
+			android:textStyle="bold"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/qty"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="5dp"
+			android:gravity="right|center_vertical"
+			android:text="Quantity"
+			android:layout_weight="1"
+			android:textColor="#063b65"
+			android:textStyle="bold"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/gross"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:gravity="right|center_vertical"
+			android:text="Gross"
+			android:layout_weight="1"
+			android:textStyle="bold"
+			android:textColor="#063b65"
+			android:textSize="15sp" />
+
+	</LinearLayout>
+
+	<View android:layout_width="fill_parent"
+		android:layout_marginTop="1dp"
+		android:background="#063b65"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="2dp"
+		/>
+	<ListView
+		android:id="@+id/resultlist"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:background="@color/lightblue"
+		android:padding="5dp"
+		android:divider="#BBBBBB"
+		android:dividerHeight="1dp"
+		android:layout_weight="1"
+
+		android:listSelector="@drawable/listviewselector">
+	</ListView>
+
+	<View android:layout_width="fill_parent"
+		android:layout_marginTop="1dp"
+		android:id="@+id/viewselected"
+		android:background="#063b65"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="2dp"
+		/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:id="@+id/resulttotalselected"
+		android:layout_width="fill_parent"
+		android:padding="5dp"
+		android:gravity="left"
+		android:layout_marginLeft="30dp"
+		android:layout_height="wrap_content"
+		android:weightSum="4"
+		>
+
+		<TextView
+			android:id="@+id/totalitemselected"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:gravity="left|center_vertical"
+			android:textSize="13sp"
+			android:layout_marginLeft="30dp"
+			android:layout_weight="2"
+			android:text="Total (Selected)"
+			android:textColor="@color/blue"
+			android:textStyle="bold|italic" />
+
+		<TextView
+			android:id="@+id/totalqtyselected"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="5dp"
+			android:gravity="right|center_vertical"
+			android:text="0"
+			android:layout_weight="1"
+			android:textColor="@color/blue"
+			android:textStyle="bold|italic"
+			android:textSize="13sp" />
+
+		<TextView
+			android:id="@+id/totalgrossselected"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:gravity="right|center_vertical"
+			android:text="0.00"
+			android:layout_weight="1"
+			android:textStyle="bold|italic"
+			android:textColor="@color/blue"
+			android:textSize="13sp" />
+
+	</LinearLayout>
+
+	<View android:layout_width="fill_parent"
+		android:layout_marginTop="1dp"
+		android:background="#063b65"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="2dp"
+		/>
+	<View android:layout_width="fill_parent"
+		android:layout_marginTop="1dp"
+		android:background="#063b65"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="2dp"
+		/>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:id="@+id/resulttotal"
+		android:layout_width="fill_parent"
+		android:padding="5dp"
+		android:layout_marginLeft="30dp"
+		android:layout_height="wrap_content"
+		android:weightSum="4"
+		>
+
+		<TextView
+			android:id="@+id/totalitem"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:gravity="left|center_vertical"
+			android:layout_marginLeft="30dp"
+			android:textSize="13sp"
+			android:layout_weight="2"
+			android:text="Total"
+			android:textColor="@color/blue"
+			android:textStyle="bold|italic" />
+
+		<TextView
+			android:id="@+id/totalqty"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="5dp"
+			android:gravity="right|center_vertical"
+			android:text="0"
+			android:layout_weight="1"
+			android:textColor="@color/blue"
+			android:textStyle="bold|italic"
+			android:textSize="13sp" />
+
+		<TextView
+			android:id="@+id/totalgross"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:gravity="right|center_vertical"
+			android:text="0.00"
+			android:layout_weight="1"
+			android:textStyle="bold|italic"
+			android:textColor="@color/blue"
+			android:textSize="13sp" />
+
+	</LinearLayout>
+
+	<View android:layout_width="fill_parent"
+		android:layout_marginTop="1dp"
+		android:background="#063b65"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="2dp"
+		/>
+	<View android:layout_width="fill_parent"
+		android:layout_marginTop="1dp"
+		android:background="#063b65"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="2dp"
+		/>
+</LinearLayout>

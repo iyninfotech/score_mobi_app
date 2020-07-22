@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:id="@+id/resultlayout"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:weightSum="3"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+<TextView
+    android:id="@+id/party"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:gravity="left|center_vertical"
+    android:textColor="#111111"
+    android:textSize="13sp"
+    android:layout_weight="2"
+    android:text="Party"
+    />
+
+<TextView
+    android:id="@+id/balance"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:gravity="right|center_vertical"
+    android:text="Balance"
+    android:layout_weight="1"
+    android:textColor="#111111"
+    android:textSize="13sp" />
+
+<!--<TextView-->
+    <!--android:id="@+id/crdb"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="right|center_vertical"-->
+    <!--android:text="Cr/Db"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:textColor="#111111"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="14sp" />-->
+
+</LinearLayout>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:baselineAligned="false"
+    android:orientation="vertical"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightblue"
+	>
+
+	<LinearLayout
+		android:baselineAligned="false"
+		android:orientation="vertical"
+		android:id="@+id/mainlinearlayout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/lightblue"
+		>
+
+	<TextView
+		android:id="@+id/headerview"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="left|center_vertical"
+		android:textColor="@color/white"
+		android:layout_marginBottom="5dp"
+		android:text="Report Parameters"
+		android:textSize="20sp"
+		android:padding="5dp"
+		android:background="@color/colorAccent"
+		android:textStyle="bold" />
+
+		<!--<Button-->
+			<!--android:id="@+id/headerviewfavourite"-->
+			<!--android:layout_width="fill_parent"-->
+			<!--android:padding="5dp"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:layout_marginTop="3dp"-->
+			<!--android:onClick="btn_viewreport_click"-->
+			<!--android:gravity="left|center_vertical"-->
+			<!--android:background="@drawable/squareboxbutton"-->
+			<!--android:text="  Report Parameters"-->
+			<!--android:textSize="15sp"-->
+			<!--android:drawableRight="@drawable/ic_action_grade"-->
+			<!--android:textStyle="bold"-->
+			<!--android:textColor="@color/white"/>-->
+
+		<!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+			<!--android:layout_gravity="right"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/ic_action_grade"/>-->
+
+	</LinearLayout>
+
+	<TableLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/lightblue"
+		android:padding="10dp"
+		android:layout_weight="2"
+		>
+
+		<TableRow
+			android:id="@+id/tblrowcompany"
+			android:layout_height="20dp"
+			>
+
+			<TextView
+				android:id="@+id/company"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_weight="1"
+				android:layout_marginRight="5dp"
+				android:text="Company"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+
+			<ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:id="@+id/btnFavourite"
+				android:layout_centerVertical="true"
+				android:layout_centerHorizontal="true"
+				android:src="@drawable/ic_action_grade"/>
+		</TableRow>
+		<View android:layout_width="fill_parent"
+			android:layout_marginTop="5dp"
+			android:background="#063b65"
+			android:layout_height="2dp"
+			/>
+
+		<TableRow
+			android:id="@+id/tblrowcompany2"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="10dp"
+			android:layout_height="20dp"
+			>
+			<Spinner
+				android:id="@+id/spinnerCompanyDetails"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textAlignment="center"
+				/>
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tblrowbranch"
+			android:layout_height="20dp"
+			android:layout_marginTop="10dp"
+			>
+
+			<TextView
+				android:id="@+id/branch"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_marginRight="5dp"
+				android:text="Branch"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+		</TableRow>
+		<View android:layout_width="fill_parent"
+			android:layout_marginTop="5dp"
+			android:background="#063b65"
+			android:layout_height="2dp"
+			/>
+
+		<TableRow
+			android:id="@+id/tblrowbranch2"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="10dp"
+			android:layout_height="20dp"
+			>
+
+			<Spinner
+				android:id="@+id/spinnerBranchDetails"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="fill_parent"
+				android:textAlignment="center"
+				android:gravity="left|center_vertical"
+				/>
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tblrowfromdate"
+			android:layout_height="20dp"
+			android:layout_marginTop="10dp"
+			>
+
+			<TextView
+				android:id="@+id/fromdate"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_marginRight="5dp"
+				android:text="Date (Duration)"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+		</TableRow>
+
+		<View android:layout_width="fill_parent"
+			android:layout_marginTop="5dp"
+			android:background="#063b65"
+			android:layout_height="2dp"
+			/>
+
+		<TableRow
+			android:id="@+id/tblrowfromdate2"
+			android:layout_height="20dp"
+			>
+
+			<EditText
+				android:id="@+id/edt_fromdate"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:editable="false"
+				android:hint="From"
+				android:layout_weight="1"
+				android:imeOptions="actionNext"
+				android:onClick="openFromDateDialog"
+				android:drawableRight="@drawable/cancel"
+				android:textSize="15sp"
+				android:textColorLink="@color/actionbar_control">
+			</EditText>
+
+			<EditText
+				android:id="@+id/edt_todate"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:editable="false"
+				android:hint="To"
+				android:layout_weight="1"
+				android:imeOptions="actionNext"
+				android:onClick="openToDateDialog"
+				android:drawableRight="@drawable/cancel"
+				android:textSize="15sp"
+				android:textColorLink="@color/actionbar_control">
+			</EditText>
+
+			<DatePicker
+				android:id="@+id/dpFromDate"
+				android:layout_width="0dp"
+				android:visibility="invisible"
+				android:layout_height="0dp" />
+
+			<DatePicker
+				android:id="@+id/dpToDate"
+				android:layout_width="0dp"
+				android:visibility="invisible"
+				android:layout_height="0dp" />
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tblrowinvoicetype"
+			android:layout_height="20dp"
+			android:layout_marginTop="10dp"
+			>
+
+			<TextView
+				android:id="@+id/invoicetype"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_marginRight="5dp"
+				android:text="Invoice Type"
+				android:layout_weight="1"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/reportby"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_weight="1"
+				android:layout_marginRight="5dp"
+				android:text="Report By"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+		</TableRow>
+
+		<View android:layout_width="fill_parent"
+			android:layout_marginTop="5dp"
+			android:background="#063b65"
+			android:layout_height="2dp"
+			/>
+
+		<TableRow
+			android:id="@+id/tblrowinvoicetype2"
+			android:layout_height="20dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="10dp"
+			>
+
+			<Spinner
+				android:id="@+id/spinnerInvoiceType"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="All"
+				android:textAlignment="center"
+				android:gravity="left|center_vertical"
+				/>
+
+			<Spinner
+				android:id="@+id/spinnerReportBy"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textAlignment="center"
+				android:gravity="left|center_vertical"
+				/>
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tblrowbutton"
+			android:layout_height="20dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="10dp"
+			>
+			<!--<ImageButton-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:id="@+id/btnFavourite"-->
+				<!--android:layout_centerVertical="true"-->
+				<!--android:layout_centerHorizontal="true"-->
+				<!--android:src="@drawable/ic_action_grade"/>-->
+		<Button
+		android:id="@+id/btnCancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="3dp"
+		android:layout_marginRight="5dp"
+		android:onClick="btn_viewreport_click"
+		android:background="@drawable/squareboxbutton"
+		android:text="Cancel"
+		android:textSize="15sp"
+		android:textStyle="bold"
+		android:textColor="#FFFFFF"/>
+
+			<Button
+				android:id="@+id/btnConfirm"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				android:onClick="btn_viewreport_click"
+				android:background="@drawable/squareboxbutton"
+				android:text="Confirm"
+				android:layout_weight="1"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"/>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#063b65</color>
+    <color name="colorPrimaryDark">#0a5a9a</color>
+    <color name="colorAccent">#063b65</color>
+
+    <color name="list_selected">#94d4f9</color>
+    <color name="list_unselected">#94d4f9</color>
+    <color name="actionbar_control">#007499</color>
+    <color name="list_pressed">#999999</color>
+
+    <color name="lightblue">#e6e6fa</color>
+    <color name="mediumblue">#c0d6e4</color>
+
+    <color name="button_pressed">#555555</color>
+    <color name="button_unpressed">#00A2E8</color>
+
+    <color name="dashboardbkg">#00A2E8</color>
+
+    <color name="dashboardbutton_pressed">#00A2E8</color>
+    <color name="dashboardbutton_unpressed">#555555</color>
+
+    <color name="dbbutton_unpressed">#d7f1eb</color>
+
+    <color name="red">#FF3333</color>
+    <color name="blue">#0000CC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#111111</color>
+    <color name="appbackground">#EEEEEE</color>
+    <color name="actionbarcolor">#5a8176</color>
+    <color name="actionbarcolorlight">#9CD7FE</color>
+    <color name="grey">#BBBBBB</color>
+    <color name="darkgrey">#AAAAAA</color>
+    <color name="heavydarkgrey">#333333</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="DUMMY">#063b65</color>
+</resources>

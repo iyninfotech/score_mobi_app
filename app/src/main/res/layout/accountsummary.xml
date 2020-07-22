@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:background="@color/lightblue"
+	>
+
+	<TableLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/lightblue"
+		android:padding="5dp"
+		android:stretchColumns="2,3" >
+
+		<TableRow
+			android:id="@+id/tblrowcompany"
+			android:layout_marginBottom="5dp"
+			android:layout_height="20dp"
+			>
+
+			<TextView
+				android:id="@+id/company"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_marginRight="5dp"
+				android:text="Company"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/coloncompany"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_marginRight="5dp"
+				android:text=":"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+
+			<Spinner
+				android:id="@+id/spinnerCompanyDetails"
+				android:layout_width="0dp"
+				android:layout_span="2"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textAlignment="center"
+				/>
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tblrowbranch"
+			android:layout_height="20dp"
+			>
+
+			<TextView
+				android:id="@+id/branch"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_marginRight="5dp"
+				android:text="Branch"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+			<TextView
+				android:id="@+id/colonbranch"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textColor="#111111"
+				android:layout_marginRight="5dp"
+				android:text=":"
+				android:textSize="15sp"
+				android:textStyle="bold" />
+			<Spinner
+				android:id="@+id/spinnerBranchDetails"
+				android:layout_width="0dp"
+				android:layout_span="2"
+				android:layout_height="fill_parent"
+				android:textAlignment="center"
+				android:gravity="left|center_vertical"
+				/>
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tblrowviewreport"
+			android:layout_height="20dp"
+			>
+
+		<Button
+			android:id="@+id/imageButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp"
+			android:layout_span="4"
+			android:onClick="btn_viewreport_click"
+			android:background="@drawable/squareboxbutton"
+			android:text="View Report"
+			android:textSize="15sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"/>
+		</TableRow>
+	</TableLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:id="@+id/resultheader"
+			android:layout_width="fill_parent"
+			android:padding="5dp"
+			android:layout_height="wrap_content"
+			android:weightSum="3"
+			>
+
+			<TextView
+				android:id="@+id/party"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:textSize="18sp"
+				android:layout_weight="2"
+				android:text="Party"
+				android:textColor="#063b65"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/balance"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:gravity="right|center_vertical"
+				android:text="Balance"
+				android:layout_weight="1"
+				android:textStyle="bold"
+				android:textColor="#063b65"
+				android:textSize="18sp" />
+
+			<!--<TextView-->
+				<!--android:id="@+id/crdb"-->
+				<!--android:layout_width="60dp"-->
+				<!--android:layout_height="fill_parent"-->
+				<!--android:gravity="right|center_vertical"-->
+				<!--android:text="Cr/Db"-->
+				<!--android:paddingLeft="5dp"-->
+				<!--android:textStyle="bold"-->
+				<!--android:textColor="#063b65"-->
+				<!--android:textSize="18sp" />-->
+
+		</LinearLayout>
+
+	<View android:layout_width="fill_parent"
+		android:layout_marginTop="1dp"
+		android:background="#063b65"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="2dp"
+		/>
+
+	<ListView
+		android:id="@+id/resultlist"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/lightblue"
+		android:padding="5dp"
+		android:divider="#BBBBBB"
+		android:dividerHeight="1dp"
+		android:layout_weight="1"
+		android:scrollbars="vertical"
+		android:listSelector="@drawable/listviewselector">
+	</ListView>
+</LinearLayout>

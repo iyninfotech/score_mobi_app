@@ -1,0 +1,5 @@
+D:\Infozeal eSolutions PVT LTD\ScoreMobi\ScoreMobi\ScoreMobi\bin\ScoreMobi.dll
+D:\Infozeal eSolutions PVT LTD\ScoreMobi\ScoreMobi\ScoreMobi\bin\ScoreMobi.pdb
+D:\Infozeal eSolutions PVT LTD\ScoreMobi\ScoreMobi\ScoreMobi\obj\Debug\ScoreMobi.dll
+D:\Infozeal eSolutions PVT LTD\ScoreMobi\ScoreMobi\ScoreMobi\obj\Debug\ScoreMobi.pdb
+D:\Infozeal eSolutions PVT LTD\ScoreMobi\ScoreMobi\ScoreMobi\obj\Debug\ScoreMobi.csprojResolveAssemblyReference.cache

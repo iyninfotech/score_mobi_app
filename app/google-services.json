@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "614364629936",
+    "firebase_url": "https://score3sapp.firebaseio.com",
+    "project_id": "score3sapp",
+    "storage_bucket": "score3sapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614364629936:android:2040373149d51b2c5f2475",
+        "android_client_info": {
+          "package_name": "com.score3s.scoremobi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614364629936-t4gl6i07j219qdthso3uft2m3akkc0nm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYDGAdj7mtmkkAiof35hwx-F93HFuxXHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614364629936-t4gl6i07j219qdthso3uft2m3akkc0nm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

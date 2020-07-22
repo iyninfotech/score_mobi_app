@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="5" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:background="@color/white"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imagess2"
+            android:scaleType="fitXY" />
+
+        <!--<com.github.mikephil.charting.charts.BarChart-->
+            <!--android:id="@+id/chart"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"/>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="4">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:id="@+id/user_login_form"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal"
+                android:background="@color/white"
+                android:orientation="vertical">
+            <Button
+                android:id="@+id/me"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:background="@drawable/buttondesign"
+                android:drawableLeft="@drawable/ic_shortcut_ic_dashboard_profile"
+                android:gravity="left|center_vertical"
+                android:onClick="btn_me_click"
+                android:paddingLeft="5dp"
+                android:enabled="false"
+                android:paddingRight="5dp"
+                android:textColor="#CC6600"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/accounts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttondesign"
+                android:drawableLeft="@drawable/ic_shortcut_ic_action_contact"
+                android:elevation="0dp"
+                android:gravity="left|center_vertical"
+                android:onClick="btn_accounts_click"
+                android:paddingLeft="3dp"
+                android:text=" Account Details"
+                android:textAllCaps="false"
+                android:textColor="@color/DUMMY"
+                android:textSize="18sp"
+                />
+
+                <!--<Button-->
+                    <!--android:id="@+id/outstanding"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="3dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:background="@drawable/buttondesign"-->
+                    <!--android:drawableLeft="@drawable/ic_shortcut_ic_action_contact"-->
+                    <!--android:elevation="0dp"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:onClick="btn_contact_click"-->
+                    <!--android:paddingLeft="3dp"-->
+                    <!--android:text=" Outstanding Details"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="@color/DUMMY"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+            <Button
+                android:id="@+id/products"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttondesign"
+                android:drawableLeft="@drawable/ic_shortcut_ic_action_product"
+                android:gravity="left|center_vertical"
+                android:onClick="btn_products_click"
+                android:paddingLeft="3dp"
+                android:visibility="visible"
+                android:text=" Stock Details"
+                android:textAllCaps="false"
+                android:textColor="@color/DUMMY"
+                android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/purchase"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttondesign"
+                    android:drawableLeft="@drawable/ic_shortcut_ic_action_purchase"
+                    android:gravity="left|center_vertical"
+                    android:onClick="btn_purchase_click"
+                    android:paddingLeft="3dp"
+                    android:text=" Purchase Summary"
+                    android:textColor="@color/DUMMY"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+                <!--<Button-->
+                    <!--android:id="@+id/purchasereturn"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="3dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:background="@drawable/buttondesign"-->
+                    <!--android:drawableLeft="@drawable/ic_shortcut_ic_action_purchase"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:onClick="btn_purchase_click"-->
+                    <!--android:paddingLeft="3dp"-->
+                    <!--android:text=" Purchase Return Summary"-->
+                    <!--android:textColor="@color/DUMMY"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textSize="18sp" />-->
+
+                <Button
+                    android:id="@+id/sale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttondesign"
+                    android:drawableLeft="@drawable/ic_shortcut_ic_action_sale"
+                    android:gravity="left|center_vertical"
+                    android:onClick="btn_sale_click"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dp"
+                    android:text=" Sales Summary"
+                    android:textColor="@color/DUMMY"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+                <!--<Button-->
+                    <!--android:id="@+id/salereturn"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="3dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:background="@drawable/buttondesign"-->
+                    <!--android:drawableLeft="@drawable/ic_shortcut_ic_action_sale"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:onClick="btn_sale_click"-->
+                    <!--android:paddingLeft="3dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--android:text=" Sales Return Summary"-->
+                    <!--android:textColor="@color/DUMMY"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textSize="18sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/settings"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="3dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:background="@drawable/buttondesign"-->
+                    <!--android:drawableLeft="@drawable/ic_shortcut_ic_action_setting"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:onClick="btn_settings_click"-->
+                    <!--android:paddingLeft="3dp"-->
+                    <!--android:text=" Settings"-->
+                    <!--android:textColor="@color/DUMMY"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textSize="18sp" />-->
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lightblue"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:text="Developed by: Infozeal eSolutions Pvt. Ltd."
+                android:background="@color/DUMMY"
+                android:textColor="@color/white"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
