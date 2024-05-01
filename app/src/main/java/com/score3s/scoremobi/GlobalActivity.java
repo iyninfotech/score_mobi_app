@@ -87,9 +87,8 @@ public class GlobalActivity extends Application {
 
     private clsDatabaseDetails clsLogInDatabase;
 
-    public static final String ROOT_URL = "http://www.scoremobi.score3s.com/";
-//http://www.scoremobi.score3s.com/
-    //http://www.datt-technologies.com/
+    public static final String ROOT_URL = "http://182.18.139.221:1913/";
+    //public static final String ROOT_URL = "http://www.scoremobi.score3s.com/";
     private int appStartFlag = 0;
 
 //    public void showSingleButtonMessage(Context cxt, String title, String msg) {

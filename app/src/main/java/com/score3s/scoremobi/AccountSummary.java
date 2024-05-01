@@ -42,7 +42,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class AccountSummary extends AppCompatActivity {
 
     //Root URL of our web service
-    public static final String ROOT_URL = "http://www.scoremobi.score3s.com/";
+   // public static final String ROOT_URL = "http://www.scoremobi.score3s.com/";
+    public static final String ROOT_URL = "http://182.18.139.221:1913/";
 
     //List view to show data
     private ListView resultlistView;

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<publishData>
-  <publishProfile publishUrl="C:\ScoreMobiApp" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="mahesh@infozeal.co.in" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="bin/ScoreMobi.dll" publishTime="07/20/2018 12:27:09" />
-    <file relUrl="bin/ScoreMobi.pdb" publishTime="07/20/2018 12:27:08" />
-    <file relUrl="IRestScoreMobi.svc" publishTime="07/26/2017 10:45:28" />
-    <file relUrl="Web.config" publishTime="07/20/2018 12:27:10" />
-  </publishProfile>
-</publishData>
